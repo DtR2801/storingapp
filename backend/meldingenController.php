@@ -12,6 +12,17 @@ require_once 'conn.php';
 
 //2. Query
 
+$query = "INSERT INTO meldingen (capaciteit, melder)";
+VALUES(:attractie, :type);
+
 //3. Prepare
 
+$statement = $conn->prepare($query);
+
 //4. Execute
+
+$statement->execute([
+    ":attractie" => $attractie,
+    ":type" => $type,
+]);
+
