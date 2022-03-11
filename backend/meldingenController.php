@@ -22,7 +22,7 @@ $statement = $conn->prepare($query);
 //4. Execute
 
 $statement->execute([
-    ":capaciteit" => $attractie,
-    ":melder" => $type,
+    ":capaciteit" => $capaciteit,
+    ":melder" => $melder,
 ]);
 
