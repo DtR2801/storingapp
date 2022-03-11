@@ -1,4 +1,4 @@
-<?php require_once 'backend/config.php'; ?>
+<?php require_once 'backend/config.example.php'; ?>
 
 <header>
     <div class="container">
