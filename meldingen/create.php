@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <label for="type">Type</label>
-                <select name="Type" id="type">
+                <select name="type" id="type">
                     <option value=""> - Kies een type - </option>
                     <option value="achtbaan">achtbaan</option>
                     <option value="draaiend">draaiend</option>
@@ -33,9 +33,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <input type="checkbox" name="prioriteit" id="prioriteit" value="" class="form-input">
                 <label for="prioriteit">Heeft dit een prioriteit?</label>
-
+                <input type="checkbox" name="prioriteit" id="prioriteit" value="" class="form-input">
             </div>
 
             <div class="form-group">
