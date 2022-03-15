@@ -2,9 +2,34 @@
 
 //Variabelen vullen
 $attractie = $_POST['attractie'];
+if(empty($attractie))
+{
+    $errors[] = "Vul de attractie-naam in.";
+}
+
 $capaciteit = $_POST['capaciteit']; 
+if(!is_numeric($capaciteit))
+{
+    $errors[] = "Vul voor capaciteit een geldig getal in.";
+}
+
 $melder = $_POST['melder'];
+if(empty($melder))
+{
+    $errors[] = "Naam melder vereist.";
+}
+
 $type = $_POST['type'];
+if(empty($type))
+{
+    $errors[] = "Kies een type.";
+}
+
+if(isset($errors))
+{
+    var_dump($errors);
+    die();
+}
 
 
 echo $attractie . " / " . $capaciteit . " / " . $melder . " / " . $type;
